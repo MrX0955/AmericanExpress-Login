@@ -5,7 +5,7 @@ American Express Login API Wrapped \\ Api Document
 ```py
 from src import main
 
-print(main(username="EMAIL HERE",password="PASSWORD HERE"))
+print(main(username="EMAIL HERE",password="PASSWORD HERE"))```
 
 # Info
 
