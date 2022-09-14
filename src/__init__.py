@@ -17,8 +17,5 @@ def main(username,password):
     }
 
     req = post(url,headers=headers,data=datam)
-    print(req.text)
-    if "Your User ID or Password is incorrect" in req.text:
-        print("Wrong User ID or Password")
-    elif "assessmentToken" in req.text:
-        print("Success Account")
+    if "Your User ID or Password is incorrect" in req.text: return "Wrong User ID or Password"
+    elif "assessmentToken" in req.text: return "Success Account"
